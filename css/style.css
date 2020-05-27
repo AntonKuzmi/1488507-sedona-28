@@ -19,8 +19,7 @@ body {
     font-weight: 700;
     color: var(--black);
     text-transform: uppercase;
-    background-color: var(--yellow);
-    background-image: url("../img/bg.jpg");
+    background-color: var(--white);
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -40,9 +39,5 @@ img {
   height: 56px;
   left: 40px;
   top: 0px; 
-  
-  font-size: 16px;
-    line-height: 20px;
-    color: var(--basic-white);
-    background-color: var(--white)
+  background-color: var(--white)
   }
