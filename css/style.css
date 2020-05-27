@@ -2,15 +2,15 @@
 
 :root {
     --white: #ffffff;
-    --blue: #81B3D2; 
     --light-grey: #EEEEEE;
+    --blue: #81B3D2; 
     --yellow:#F7E491;
     --brown:#766357;
     --black:#000000;
 }
 
 body {
-    min-width: 1220px;
+    min-width: 1300px;
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
@@ -29,7 +29,20 @@ a {
     text-decoration: none;
   }
   
-  img {
+img {
     max-width: 100%;
     height: auto;
+  }
+ 
+.main-navigation {
+  position: absolute;
+  width: 1200px;
+  height: 56px;
+  left: 40px;
+  top: 0px; 
+  
+  font-size: 16px;
+    line-height: 20px;
+    color: var(--basic-white);
+    background-color: var(--white)
   }
