@@ -4,6 +4,7 @@
     --white: #ffffff;
     --blue: #81B3D2; 
     --light-grey: #EEEEEE;
+    --yellow:#F7E491;
     --brown:#766357;
     --black:#000000;
 }
@@ -18,7 +19,7 @@ body {
     font-weight: 700;
     color: var(--black);
     text-transform: uppercase;
-    background-color: var(--white);
+    background-color: var(--yellow);
     background-image: url("../img/bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
