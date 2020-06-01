@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
 
   <header class="main-header">
     <nav class="main-navigation">
-    <a class="main-navigation-logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип Cедона»"></a>
-       <ul class="site-navigation">
+      <a class="main-navigation-logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип Cедона»"></a>
+      <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
@@ -48,14 +48,17 @@
 
     <section class="advantages">
       <div class="advantages-item">
+        <img src="img/icon-1.svg" width="75" height="72" alt="домик">
         <h2>Жильё</h2>
         <p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
       </div>
       <div class="advantages-item">
+        <img src="img/icon-3.svg" width="64" height="77" alt="бургер">
         <h2>Еда</h2>
         <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       </div>
       <div class="advantages-item">
+        <img src="img/icon-2.svg" width="64" height="77" alt="подарок">
         <h2>Сувениры</h2>
         <p>Не только китайского, но и местного производства</p>
       </div>
@@ -93,15 +96,36 @@
     <div class="titles">
       <h2>Заинтересовались?</h2>
       <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a href="#">Поиск гостиницы в Седоне</a>
+      <button type="button" class="button-search">Поиск гостиницы в Седоне</button>
     </div>
 
     <div class="searching-block">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p><label for="arrival-date">дата заезда:</label>
-          <input type="text" id="arrival-date" value="24 апреля 2017"></p>
-        <p><label for="date-departure">дата выезда:</label>
-          <input type="text" id="date-departure" value="4 июня 2017"></p>
+      <form action="https://echo.htmlacademy.ru" method="post" class="booking-form">
+        <p class="booking-item">
+          <label for="data-in">Дата заезда:</label>
+          <input type="text" id="data-in" name="in" placeholder="24 апреля 2017">
+          <button type="button" class="field-button">Календарь</button>
+        </p>
+        <p class="booking-item">
+          <label for="data-out">Дата выезда:</label>
+          <input type="text" id="data-out" name="out" placeholder="24 июля 2017">
+          <button type="button" class="field-button">Календарь</button>
+        </p>
+        <p class="booking-item">
+          <label for="adults">Взрослые:</label>
+          <button type="button" class="field-button"></button>
+          <input type="number" id="adults" name="adults" value="2">
+          <button type="button" class="field-button">+</button>
+        </p>
+        <p class="booking-item">
+          <label for="kids">Дети:</label>
+          <button type="button" class="field-button">-</button>
+          <input type="number" id="kids" name="kids" value="0">
+          <button type="button" class="field-button">+</button>
+        </p>
+
+        <button type="submit" class="button button-blue">Найти</button>
+
       </form>
     </div>
   </main>
@@ -113,9 +137,35 @@
     </div>
     <div class="socials">
       <ul>
-        <li> <a href="#">Twitter</a> </li>
-        <li> <a href="#">Facebook</a> </li>
-        <li> <a href="#">Youtube</a> </li>
+        <li>
+          <a class="social-button" href="https://www.twitter.com/">
+            <span class="visually-hidden">twitter</span>
+            <svg width="17" height="15" viewBox="0 0 17 15">
+              <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.
+              231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.
+              231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.
+              477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.
+              442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="https://www.facebook.com/">
+            <span class="visually-hidden">facebook</span>
+            <svg width="12" height="22" viewBox="0 0 12 22">
+              <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="https://www.youtube.com/">
+            <span class="visually-hidden">youtube</span>
+            <svg width="20" height="16" viewBox="0 0 20 16">
+              <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.
+              65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" />
+            </svg>
+          </a>
+        </li>
       </ul>
     </div>
     <div class="logo-academy">
