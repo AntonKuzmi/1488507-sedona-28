@@ -1,4 +1,7 @@
 
+*, *::before, *::after {
+box-sizing: border-box;
+}
 
 :root {
     --white: #ffffff;
@@ -32,10 +35,13 @@ img {
     max-width: 100%;
     height: auto;
   }
- 
+
+
+
 .main-navigation {
    width: 1200px;
-    left: 40px;
   top: 0px; 
-  background-color: var(--white)
-  }
+  background-color: var(--white);
+display: flex;
+flex-direction: column;
+}
