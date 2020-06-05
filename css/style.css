@@ -1,47 +1,295 @@
-
-*, *::before, *::after {
-box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 :root {
-    --white: #ffffff;
-    --light-grey: #EEEEEE;
-    --blue: #81B3D2; 
-    --yellow:#F7E491;
-    --brown:#766357;
-    --black:#000000;
+  --white: #ffffff;
+  --lightest-grey: #EEEEEE;
+  --light-grey: #F2F2F2;
+  --middle-grey: #EBEBEB;
+  --asphalt: #A9A9A9;
+  --grey: #888888;
+  --dark-grey: #333333;
+  --light-brown: #766357;
+  --brown: #604E43;
+  --dark-brown: #503E33;
+  --light-black: #333333;
+  --black: #000000;
+  --blue: #81B3D2;
+  --middle-blue: #669EC0;
+  --dark-blue: #5496BD;
 }
 
 body {
-    min-width: 1200px;
-    margin: 0;
-    padding: 0;
-    font-family: 'PT Sans', Arial, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-    color: var(--black);
-    text-transform: uppercase;
-    background-color: var(--white);
-    background-position: top center;
-    background-repeat: no-repeat;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: bold;
+  color: var(--black);
+  text-transform: uppercase;
+  background-color: var(--white);
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 a {
-    text-decoration: none;
-  }
-  
+  text-decoration: none;
+  color: var(--black);
+}
+
 img {
-    max-width: 100%;
-    height: auto;
-  }
+  max-width: 100%;
+  height: auto;
+}
 
-
-
-.main-navigation {
-   width: 1200px;
-  top: 0px; 
+.site-navigation {
   background-color: var(--white);
-display: flex;
-flex-direction: column;
+  list-style: none;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.site-navigation a:hover {
+  color: var(--blue);
+}
+
+.site-navigation a:focus {
+  color: var(--black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.headlines-text h2 {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.headlines-text h3 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--light-black);
+}
+
+.reason {
+  display: flex;
+  color: var(--white);
+}
+
+.reason-img {
+  width: 800px;
+  height: 256px;
+  order: 2;
+}
+
+.reason-text {
+  background-color: var(--blue);
+  text-align: center;
+}
+
+.reason-text .true {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.number-w {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--white);
+}
+
+.authentic-life {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantages {
+  display: flex;
+  width: 1200px;
+  background-color: var(--white);
+  justify-content: space-around;
+}
+
+.advantages-item h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--black);
+}
+
+.advantages-item p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--light-black);
+}
+
+.bridge {
+  display: flex;
+  width: 1200px;
+  color: var(--white);
+}
+
+.bridge-text {
+  background-color: var(--blue);
+  text-align: center;
+}
+
+.bridge-img {
+  width: 800px;
+  height: 256px;
+}
+
+.bridge h2 {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.bridge p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.reasons {
+  display: flex;
+  width: 1200px;
+  background-color: var(--lightest-grey);
+  justify-content: space-around;
+}
+
+.reasons h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.number-b {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--light-black);
+}
+
+.reasons-item p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--light-black);
+  text-align: center;
+}
+
+.searching-titles {
+  text-align: center;
+  background-color: var(--white);
+}
+
+.searching-titles h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.searching-titles p {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 14px;
+  color: var(--light-black);
+}
+
+.button-b {
+  width: 568px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--white);
+  background-color: var(--light-brown);
+  text-align: center;
+}
+.button-b:hover {
+  background-color: var(--brown);
+}
+
+.button-b:focus {
+  background-color: var(--dark-brown);
+}
+
+
+.booking-block {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px; 
+  text-align: center;
+}
+
+.booking-block input {
+  font: inherit;
+  background-color: var(--light-grey); 
+}
+
+.field-button {
+  color: var(--asphalt);
+}
+
+.booking-item .field-button:focus {
+  color: var(--blue);
+} 
+
+.booking-item .field-button:hover {
+  color: var(--black);
+}
+
+.booking-item input {
+  color: var(--asphalt);
+}
+
+.booking-block input:hover {
+  background-color: var(--middle-grey); 
+}
+
+.booking-block input:focus {
+  background-color: var(--white)
+}
+
+
+.socials {
+  list-style: none;
+}
+
+.hotels-sorting-item {
+  list-style: none;
+}
+
+.sorting-links {
+  list-style: none;
 }
