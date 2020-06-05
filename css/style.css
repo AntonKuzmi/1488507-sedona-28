@@ -6,7 +6,10 @@
 
 :root {
   --white: #ffffff;
-  --light-grey: #EEEEEE;
+  --lightest-grey: #EEEEEE;
+  --light-grey: #F2F2F2;
+  --middle-grey: #EBEBEB;
+  --asphalt: #A9A9A9;
   --grey: #888888;
   --dark-grey: #333333;
   --light-brown: #766357;
@@ -79,12 +82,17 @@ img {
 .reason {
   display: flex;
   color: var(--white);
-  background-color: var(--blue);
 }
 
 .reason-img {
   width: 800px;
-  height: 256px
+  height: 256px;
+  order: 2;
+}
+
+.reason-text {
+  background-color: var(--blue);
+  text-align: center;
 }
 
 .reason-text .true {
@@ -98,7 +106,7 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: var(--white)
+  color: var(--white);
 }
 
 .authentic-life {
@@ -112,7 +120,8 @@ img {
 .advantages {
   display: flex;
   width: 1200px;
-  background: var(--white);
+  background-color: var(--white);
+  justify-content: space-around;
 }
 
 .advantages-item h2 {
@@ -121,28 +130,166 @@ img {
   font-size: 21px;
   line-height: 21px;
   text-align: center;
-  color: (var(--black);
-  }
+  color: var(--black);
+}
 
-  .advantages-item p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    color: (var(--light-black);
-    }
+.advantages-item p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--light-black);
+}
 
-  }
+.bridge {
+  display: flex;
+  width: 1200px;
+  color: var(--white);
+}
 
-  .socials {
-    list-style: none;
-  }
+.bridge-text {
+  background-color: var(--blue);
+  text-align: center;
+}
 
-  .hotels-sorting-item {
-    list-style: none;
-  }
+.bridge-img {
+  width: 800px;
+  height: 256px;
+}
 
-  .sorting-links {
-    list-style: none;
-  }
+.bridge h2 {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.bridge p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.reasons {
+  display: flex;
+  width: 1200px;
+  background-color: var(--lightest-grey);
+  justify-content: space-around;
+}
+
+.reasons h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.number-b {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--light-black);
+}
+
+.reasons-item p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--light-black);
+  text-align: center;
+}
+
+.searching-titles {
+  text-align: center;
+  background-color: var(--white);
+}
+
+.searching-titles h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.searching-titles p {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 14px;
+  color: var(--light-black);
+}
+
+.button-b {
+  width: 568px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--white);
+  background-color: var(--light-brown);
+  text-align: center;
+}
+.button-b:hover {
+  background-color: var(--brown);
+}
+
+.button-b:focus {
+  background-color: var(--dark-brown);
+}
+
+
+.booking-block {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px; 
+  text-align: center;
+}
+
+.booking-block input {
+  font: inherit;
+  background-color: var(--light-grey); 
+}
+
+.field-button {
+  color: var(--asphalt);
+}
+
+.booking-item .field-button:focus {
+  color: var(--blue);
+} 
+
+.booking-item .field-button:hover {
+  color: var(--black);
+}
+
+.booking-item input {
+  color: var(--asphalt);
+}
+
+.booking-block input:hover {
+  background-color: var(--middle-grey); 
+}
+
+.booking-block input:focus {
+  background-color: var(--white)
+}
+
+
+.socials {
+  list-style: none;
+}
+
+.hotels-sorting-item {
+  list-style: none;
+}
+
+.sorting-links {
+  list-style: none;
+}
