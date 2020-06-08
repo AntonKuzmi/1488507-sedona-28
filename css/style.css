@@ -9,6 +9,7 @@
   --lightest-grey: #EEEEEE;
   --light-grey: #F2F2F2;
   --middle-grey: #EBEBEB;
+  --border-color: #E5E5E5;
   --asphalt: #A9A9A9;
   --grey: #888888;
   --dark-grey: #333333;
@@ -346,16 +347,43 @@ img {
   background-color: var(--dark-blue);
 }
 
+.contacts .visit {
+  display: flex;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
 
+.contacts .tel {
+  display: flex;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
 
 .socials {
+  display: flex;
   list-style: none;
   padding-top: 36px;
   padding-bottom: 36px;
   padding-left: 525px;
   padding-right: 525px;
   width: 150px;
-  display: flex;
+ }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .social-button {
@@ -366,17 +394,119 @@ img {
   text-align: center;
   width: 46px;
   height: 48px;
-}
+  margin: 6px;
+ }
 
 .social-button:hover {
-  background-color: var(--blue);
+  background-color: var(--middle-blue);
 }
 
-.social-button:active {
-  background-color: var(--blue);
+.social-button:active path {
+  fill: var(--lightest-blue);
+  color: var(--lightest-blue);
+  background-color: var(--dark-blue);
+}
+
+.logo-academy {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 44px;
+  margin-right: 139px;
 }
 
 
+
+artical {
+  display: flex;
+  border-top: var(--border-color);
+  width: 1200px;
+  border-width: 1px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.link-blue {
+  background-color: var(--blue);
+  color: var(--white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-left: 17px;
+  padding-right: 16px;
+
+}
+
+.link-blue:hover {
+  background-color: var(--middle-blue);
+}
+
+.link-blue:active {
+  background-color: var(--dark-blue);
+  color: var(--lightest-blue);
+}
+
+
+.link-brown {
+  background-color: var(--light-brown);
+  color: var(--white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-left: 16px;
+  padding-right: 17px;
+}
+
+.link-brown:hover {
+  background-color: var(--brown);
+}
+
+.link-brown:active {
+  background-color: var(--dark-brown);
+  color: var(--lightest-brown);
+}
+
+.link-hotel {
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+align-items: center;
+text-transform: uppercase;
+}
+
+.link-hotel:hover {
+color: var(--blue);
+}
+
+.link-hotel:active {
+  opacity: 0.3;
+}
+
+.hotels-sorting-item {
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+align-items: center;
+opacity: 0.3;
+}
 
 
 
