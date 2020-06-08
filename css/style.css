@@ -10,6 +10,7 @@
   --light-grey: #F2F2F2;
   --middle-grey: #EBEBEB;
   --border-color: #E5E5E5;
+  --silence: #CACACA;
   --asphalt: #A9A9A9;
   --grey: #888888;
   --dark-grey: #333333;
@@ -432,6 +433,20 @@ artical {
   padding-bottom: 30px;
 }
 
+.type {
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+color: var(--light-black);
+}
+
+.price {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--light-black);
+}
+
 .link-blue {
   background-color: var(--blue);
   color: var(--white);
@@ -499,7 +514,7 @@ color: var(--blue);
   opacity: 0.3;
 }
 
-.hotels-sorting-item {
+.hotels-sorting-item a {
 font-style: normal;
 font-weight: normal;
 font-size: 12px;
@@ -508,13 +523,26 @@ align-items: center;
 opacity: 0.3;
 }
 
+.hotels-sorting-item a:hover {
+  color: var(--blue);
+  opacity: 1;
+}
 
+.hotels-sorting-item a:active {
+  color: inherit;
+}
 
+.sorting-links a path {
+  fill: var(--silence);
+}
 
+.sorting-links a:hover path {
+  fill: var(--black);
+}
 
-
-
-
+.sorting-links a:active path {
+  fill: var(--blue);
+}
 
 
 
