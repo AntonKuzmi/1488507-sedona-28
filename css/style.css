@@ -536,9 +536,6 @@ artical {
   opacity: 1;
 }
 
-.hotels-sorting-item a:active {
-  color: inherit;
-}
 
 .sorting-links a path {
   fill: var(--silence);
@@ -552,7 +549,19 @@ artical {
   fill: var(--blue);
 }
 
+.field-button {
+  color: var(--asphalt);
+  background-color: var(--light-grey);
+  border: none;
+}
 
+.field-button:hover {
+  color: var(--black);
+}
+
+.field-button:active {
+  color: var(--blue);
+}
 
 
 
