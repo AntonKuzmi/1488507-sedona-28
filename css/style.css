@@ -374,7 +374,7 @@ img {
   padding-left: 525px;
   padding-right: 525px;
   width: 150px;
- }
+}
 
 .visually-hidden {
   position: absolute;
@@ -396,7 +396,7 @@ img {
   width: 46px;
   height: 48px;
   margin: 6px;
- }
+}
 
 .social-button:hover {
   background-color: var(--middle-blue);
@@ -423,6 +423,14 @@ img {
 }
 
 
+.logo-academy:hover path {
+  fill: var(--blue)
+}
+
+.logo-academy:active path {
+  fill: var(--black);
+  opacity: 0.3;
+}
 
 artical {
   display: flex;
@@ -434,10 +442,10 @@ artical {
 }
 
 .type {
-font-weight: normal;
-font-size: 14px;
-line-height: 21px;
-color: var(--light-black);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--light-black);
 }
 
 .price {
@@ -498,16 +506,16 @@ color: var(--light-black);
 }
 
 .link-hotel {
-font-style: normal;
-font-weight: bold;
-font-size: 21px;
-line-height: 26px;
-align-items: center;
-text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  align-items: center;
+  text-transform: uppercase;
 }
 
 .link-hotel:hover {
-color: var(--blue);
+  color: var(--blue);
 }
 
 .link-hotel:active {
@@ -515,12 +523,12 @@ color: var(--blue);
 }
 
 .hotels-sorting-item a {
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 18px;
-align-items: center;
-opacity: 0.3;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+  opacity: 0.3;
 }
 
 .hotels-sorting-item a:hover {
