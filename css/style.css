@@ -1,3 +1,4 @@
+/* Variables */
 *,
 *::before,
 *::after {
@@ -26,9 +27,18 @@
   --dark-blue: #5496BD;
 }
 
-body {
-  width: 1200px;
-  margin: 0;
+
+/* Global */
+
+.page-body {
+  max-width: 1200px;
+  min-height: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  background-color: var(--light-grey);
   padding: 0;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
@@ -37,7 +47,6 @@ body {
   font-weight: bold;
   color: var(--black);
   text-transform: uppercase;
-  background-color: var(--white);
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -49,17 +58,36 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
+
+/* Main navigation */
+
+.main-navigation-logo {
+  display: flex;
+  width: 138px;
+  height: 70px;
+  background: none;
+  margin-top: 0px;
+  justify-self: center;
+  z-index: 2;
+}
+
 
 .site-navigation {
   display: flex;
   width: 1200px;
-  justify-content: space-around;
+  position: absolute;
+  top: 0px;
+  justify-content: space-between;
   background-color: var(--white);
   list-style: none;
   font-size: 14px;
   line-height: 26px;
+  padding-left: 72px;
+  padding-right: 72px;
+  margin-top: 0px;
+  z-index: 1;
 }
 
 .site-navigation a:hover {
@@ -73,6 +101,14 @@ img {
 }
 
 
+.headlines {
+  width: 1200px;
+  display: flex;
+  padding-bottom: 51px;
+  padding-top: 43px;
+}
+
+
 .headlines-text h2 {
   width: 470px;
   height: 80px;
@@ -83,7 +119,6 @@ img {
 }
 
 .headlines-text h3 {
-  padding-bottom: 51px;
   width: 519px;
   height: 26px;
   margin-left: 340px;
@@ -144,7 +179,11 @@ img {
   background-color: var(--white);
   justify-content: space-around;
   padding-bottom: 82px;
+  padding-top: 60px;
+}
 
+.advantages-item {
+  text-align: center;
 }
 
 .advantages-item h2 {
@@ -198,7 +237,6 @@ img {
   line-height: 21px;
   padding-left: 50px;
   padding-right: 49px;
-  text-align: center;
 }
 
 .reasons {
@@ -224,6 +262,7 @@ img {
   font-size: 14px;
   line-height: 21px;
   color: var(--light-black);
+
 }
 
 .reasons-item p {
@@ -237,8 +276,10 @@ img {
 
 .searching-titles {
   display: inline-block;
-  margin-top: 58px;
-  text-align: center;
+  width: 1200px;
+  height: auto;
+  padding-top: 58px;
+  justify-content: center;
   background-color: var(--white);
 }
 
@@ -260,8 +301,9 @@ img {
 
 .button-b {
   display: flex;
-  margin-left: 316px;
+  margin-left: 356px;
   margin-right: 316px;
+  margin-bottom: 0px;
   padding-left: 125px;
   padding-right: 124px;
   padding-top: 30px;
@@ -290,15 +332,22 @@ img {
 .booking-block {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 371px;
-  margin-right: 371px;
+  margin-top: 0px;
+  margin-left: 356px;
+  margin-right: 356px;
+  margin-bottom: 78px;
   font-style: normal;
   font-weight: bold;
   width: 568px;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
+  background-color: var(--white);
+  padding: 55px;
+
 }
+
+/*links & buttons*/
 
 .booking-block input {
   font: inherit;
@@ -307,15 +356,17 @@ img {
 }
 
 .booking-item .field-button {
+  width: 23;
+  height: 23;
   color: var(--asphalt);
 }
 
-.booking-item .field-button:focus {
-  color: var(--blue);
+.booking-item .field-button:active path {
+  fill: var(--blue);
 }
 
-.booking-item .field-button:hover {
-  color: var(--black);
+.booking-item .field-button:hover path {
+  fill: var(--black);
 }
 
 .booking-block input:hover {
@@ -348,6 +399,13 @@ img {
   background-color: var(--dark-blue);
 }
 
+
+.contacts {
+  display: flex;
+  outline: 5px solid purple;
+  height: 61px;
+}
+
 .contacts .visit {
   display: flex;
   font-style: normal;
@@ -367,13 +425,9 @@ img {
 }
 
 .socials {
+  outline: 5px solid greenyellow;
   display: flex;
   list-style: none;
-  padding-top: 36px;
-  padding-bottom: 36px;
-  padding-left: 525px;
-  padding-right: 525px;
-  width: 150px;
 }
 
 .visually-hidden {
@@ -387,6 +441,7 @@ img {
   overflow: hidden;
 }
 
+
 .social-button {
   display: flex;
   justify-content: center;
@@ -396,6 +451,7 @@ img {
   width: 46px;
   height: 48px;
   margin: 6px;
+  margin-bottom: 0px;
 }
 
 .social-button:hover {
@@ -404,11 +460,12 @@ img {
 
 .social-button:active path {
   fill: var(--lightest-blue);
-  color: var(--lightest-blue);
+
   background-color: var(--dark-blue);
 }
 
 .logo-academy {
+  outline: 5px solid red;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -424,21 +481,12 @@ img {
 
 
 .logo-academy:hover path {
-  fill: var(--blue)
+  fill: var(--blue);
 }
 
 .logo-academy:active path {
   fill: var(--black);
   opacity: 0.3;
-}
-
-artical {
-  display: flex;
-  border-top: var(--border-color);
-  width: 1200px;
-  border-width: 1px;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .type {
@@ -454,6 +502,7 @@ artical {
   line-height: 21px;
   color: var(--light-black);
 }
+
 
 .link-blue {
   background-color: var(--blue);
@@ -512,6 +561,7 @@ artical {
   line-height: 26px;
   align-items: center;
   text-transform: uppercase;
+  padding-left: 29px;
 }
 
 .link-hotel:hover {
@@ -562,6 +612,65 @@ artical {
 .field-button:active {
   color: var(--blue);
 }
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--white);
+  width: 1200px;
+}
+
+/*Hotels*/
+
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  min-height: 217px;
+  background-image: url(../img/background2.jpg);
+  background-repeat: no-repeat;
+  margin-bottom: 0px;
+  padding-left: 72px;
+  padding-top: 27px;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 21px;
+ }
+
+fieldset {
+  display: flex;
+  }
+
+.hotels-sorting-block {
+  display: flex;
+  width: 1200px;
+  height: 85px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-color);
+  padding-left: 73px;
+  margin-top: 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotels-sorting-item {
+  display: flex;
+}
+
+
+.hotel {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  height: 150px;
+  background-color: var(--white);
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 73px;
+  border-bottom: 1px solid var(--border-color);
+}
+
 
 
 
