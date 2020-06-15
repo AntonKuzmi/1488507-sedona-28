@@ -502,7 +502,7 @@ img {
   align-items: center;
   text-transform: uppercase;
   padding-left: 29px;
-  }
+}
 
 .link-hotel:hover {
   color: var(--blue);
@@ -568,7 +568,7 @@ img {
 
 .footer .contacts {
   justify-self: flex-start;
-  }
+}
 
 
 .contacts .visit {
@@ -725,24 +725,24 @@ fieldset {
   padding-top: 30px;
   padding-left: 73px;
   border-bottom: 1px solid var(--border-color);
-  }
+}
 
 .hotel h2 {
-display: table-cell;
+  display: table-cell;
 
 }
 
 .type,
 .price {
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 21px;
-margin-top: 7px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 7px;
 }
 
 .type {
-padding-left: 28px;
+  padding-left: 28px;
 }
 
 .socials {
