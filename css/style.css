@@ -65,7 +65,7 @@ img {
 .site-navigation {
   width: 1200px;
   display: flex;
-  position: absolute;
+  position: relative;
   top: 0px;
   justify-content: space-between;
   margin: 0px;
@@ -75,7 +75,7 @@ img {
   padding-bottom: 15px;
   background-color: var(--white);
   list-style: none;
-  z-index: 1;
+ 
 }
 
 
@@ -90,7 +90,7 @@ img {
 }
 
 .main-navigation-logo {
-  position: relative;
+  position: absolute;
   display: flex;
   width: 138px;
   height: 70px;
@@ -98,14 +98,16 @@ img {
   transform: translateX(-50%);
   background: none;
   margin-top: 0px;
-  z-index: 3;
+  z-index: 2;
 }
 
 /* Main content*/
 
 .headlines::before {
   display: flex;
-  width: 100%;
+  position: absolute;
+  top: 56px;
+  width: 1200px;
   height: 510px;
   content: "";
   background-image: url(../img/mainpicture.jpg);
@@ -335,7 +337,7 @@ img {
 }
 
 .searching-titles::after {
-  display: flex;
+  display: block;
   width: 1200px;
   height: 593px;
   padding: 0px;
@@ -348,7 +350,7 @@ img {
 
 .booking-block {
   position: absolute;
-  top: 2180px;
+  top: 1650px;
   display: flex;
   flex-wrap: wrap;
   width: 568px;
@@ -625,6 +627,7 @@ input:focus {
 
 
 .filters {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 1200px;
@@ -638,20 +641,7 @@ input:focus {
   font-weight: normal;
   }
 
-.left {
-  padding-left: 72px;
-  border: none;
-  padding-top: 26px;
-  line-height: 250%;
-}
-
-.right {
-  padding-left: 120px;
-  border: none;
-  padding-top: 26px;
-  line-height: 250%;
-}
-
+  
 .types,
 .facilities {
   padding-top: 26px;
@@ -703,8 +693,12 @@ input:focus {
 
 .hotel h2 {
   display: table-cell;
-
 }
+
+.two-buttons {  
+  margin-left: 29px;
+  margin-bottom: 29px;
+ }
 
 .type,
 .price {
