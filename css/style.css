@@ -366,7 +366,6 @@ img {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  justify-content: flex-start;
   background-color: var(--white);
   padding: 55px;
   z-index: 7;
@@ -654,9 +653,15 @@ input:focus {
   line-height: 21px;
   color: var(--white);
   background: rgba(255, 255, 255, 0.0);
-  border: 2px solid white;
+  border: 2px solid var(--white);
+  border-radius: 2px;
 }
 
+.price-button:hover {
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--white);
+}
 .types,
 .facilities {
   padding-top: 26px;
@@ -775,4 +780,5 @@ input:focus {
 .booking-item-x input {
   width: 114px;
   margin-bottom: 54px;
+  border: none;
 }
