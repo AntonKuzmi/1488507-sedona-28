@@ -808,6 +808,7 @@ input:focus {
 
 .hotel {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   width: 1200px;
   background-color: var(--white);
@@ -815,18 +816,20 @@ input:focus {
   border-bottom: 1px solid var(--border-color);
 }
 
+.hotel-content {
+  position: relative;
+}
+
 .hotel-pic {
   margin-top: 30px;
+  margin-bottom: 30px;
   width: 135px;
   height: 90px;
 }
 
-.hotel {
-  position: relative;
-}
-
 .hotel h2 {
-  margin-top: 23px;
+  margin-top: 24px;
+  margin-bottom: 7px;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -845,6 +848,11 @@ input:focus {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
+}
+
+.price {
+  position: absolute;
+  left: 145px;
 }
 
 .hotel-rating {
