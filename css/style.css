@@ -85,6 +85,10 @@ img {
   list-style: none;
 }
 
+.site-navigation li:nth-child(2) {
+  padding-right: 274px;
+}
+
 .site-navigation a:hover {
   color: var(--blue);
 }
@@ -322,6 +326,7 @@ img {
   line-height: 24px;
   font-size: 14px;
   color: var(--light-black);
+  margin-bottom: 58px;
 }
 
 .button-b {
@@ -369,7 +374,7 @@ img {
 
 .booking-block {
   position: absolute;
-  top: 2188px;
+  top: 2232px;
   display: flex;
   flex-wrap: wrap;
   width: 568px;
@@ -563,9 +568,10 @@ input:focus {
 }
 
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 1200px;
-  justify-content: space-around;
+  justify-content: center;
   background-color: var(--white);
 }
 
@@ -573,7 +579,7 @@ input:focus {
   display: flex;
   position: absolute;
   z-index: 6;
-  top: 2650px;
+  top: 2695px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -612,17 +618,6 @@ input:focus {
   margin-bottom: 36px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .social-button {
   display: flex;
   justify-content: center;
@@ -641,7 +636,6 @@ input:focus {
 
 .social-button:active path {
   fill: var(--lightest-blue);
-
   background-color: var(--dark-blue);
 }
 
@@ -701,6 +695,7 @@ input:focus {
 
 .right {
   display: block;
+  position: relative;
   flex-wrap: wrap;
   width: 600px;
   padding-top: 26px;
@@ -739,6 +734,9 @@ input:focus {
 }
 
 .price-button {
+  position: absolute;
+  right: 168px;
+  bottom: 32px;
   width: 137px;
   height: 36px;
   font-weight: normal;
@@ -801,7 +799,7 @@ input:focus {
 
 .sorting-links {
   display: flex;
-  padding-left: 503px;
+  padding-left: 480px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -825,6 +823,7 @@ input:focus {
   margin-bottom: 30px;
   width: 135px;
   height: 90px;
+  background-color: var(--background);
 }
 
 .hotel h2 {
@@ -917,13 +916,13 @@ input:focus {
   border: none;
 }
 
-.price-controls input {
-  font-family: inherit;
-  font-size: inherit;
-  color: var(--white);
-  width: 58px;
-  height: 21px;
-  text-align: center;
-  border-color: var(--white);
-  background-color: transparent;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
