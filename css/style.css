@@ -124,6 +124,7 @@ img {
   width: 1200px;
   align-items: center;
   text-align: center;
+  vertical-align: auto;
   background-color: var(--white);
 }
 
@@ -305,6 +306,7 @@ img {
 
 .searching-titles {
   display: inline-block;
+  vertical-align: auto;
   justify-content: center;
   width: 1200px;
   padding-top: 58px;
