@@ -27,6 +27,7 @@
   --middle-blue: #669EC0;
   --dark-blue: #5496BD;
   --background: #ffefd5;
+  --background-2: #3A6486;
 }
 
 /* Global */
@@ -673,7 +674,7 @@ input:focus {
   height: 217px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--background);
+  background-color: var(--background-2);
   color: var(--white);
   font-size: 14px;
   line-height: 21px;
