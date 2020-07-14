@@ -640,7 +640,6 @@ input:focus {
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
-  align-items: center;
   text-transform: uppercase;
   padding-bottom: 3px;
   padding-top: 3px;
@@ -664,7 +663,6 @@ input:focus {
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
-  align-items: center;
   text-transform: uppercase;
   padding-bottom: 3px;
   padding-top: 3px;
@@ -903,7 +901,7 @@ input:focus {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  padding-top: 26px;
+  padding-top: 24px;
   padding-left: 110px;
   }
 
@@ -988,7 +986,7 @@ input:focus {
 
 .sorting-links {
   display: flex;
-  padding-left: 480px;
+  margin-left: 430px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -1005,6 +1003,19 @@ input:focus {
 
 .hotel-content {
   position: relative;
+  width: 500px;
+}
+
+.link-blue {
+  position: absolute;
+  left: 29px;
+  bottom: 30px;
+}
+
+.link-brown {
+  position: absolute;
+  left: 145px;
+  bottom: 30px;
 }
 
 .hotel-pic {
@@ -1016,7 +1027,7 @@ input:focus {
 }
 
 .hotel h2 {
-  margin-top: 24px;
+  margin-top: 23px;
   margin-bottom: 7px;
   font-style: normal;
   font-weight: bold;
@@ -1024,14 +1035,10 @@ input:focus {
   line-height: 26px;
 }
 
-.two-buttons {
-  margin-left: 29px;
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
 
 .type,
 .price {
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1042,6 +1049,13 @@ input:focus {
 .price {
   position: absolute;
   left: 145px;
+  top: 57px;
+}
+
+.type {
+  position: absolute;
+  padding-left: 29px;
+  top: 57px;
 }
 
 .hotel-rating {
@@ -1064,25 +1078,27 @@ input:focus {
   position: absolute;
   display: flex;
   top: 30px;
-  right: 72px;
+  right: 67px;
+}
+
+.star {
+  width: 18px;
+  height: 17px;
+  margin-right: 6px;
 }
 
 .stars-desert {
   position: absolute;
   display: flex;
   top: 30px;
-  right: 72px;
+  right: 67px;
 }
 
 .stars-diablo {
   position: absolute;
   display: flex;
   top: 30px;
-  right: 72px;
-}
-
-.type {
-  padding-left: 29px;
+  right: 67px;
 }
 
 .socials {
@@ -1116,7 +1132,6 @@ input:focus {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
 .filter-item {
   position: relative;
@@ -1191,7 +1206,6 @@ input:focus {
   padding: 0;
   border: 8px solid var(--white);
   background-color: var(--filter-radio);
-  background-position: center;
   border-radius: 50%;
   box-shadow: 0 2px 0px 0 var(--filter-radio);
   cursor: pointer;
@@ -1229,6 +1243,7 @@ input:focus {
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid var(--white);
+  border-radius: 5px;
   color: var(--white);
   width: 137px;
   height: 36px;
@@ -1245,6 +1260,12 @@ font-style: normal;
 font-weight: bold;
 font-size: 16px;
 line-height: 21px;
+}
+
+.sort-down {
+  margin-left: 99px;
+  width: 11px;
+  height: 10px;
 }
 
 
