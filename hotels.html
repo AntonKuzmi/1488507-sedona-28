@@ -89,32 +89,30 @@
           </div>
 
           <div class="right">
-            <fieldset>
-              <legend class="price-tag">Стоимость в сутки (Р):</legend>
-              <div class="range-filter">
-                <div class="price-controls border">
-                  <div class="price-area price-area-min">
-                    <label class="price-item min-price" for="min-price">от </label>
-                    <input type="text" name="min-price" id="min-price" value="0">
+                <fieldset class="filter-item catalog-form">
+                  <legend class= "day-price">Стоимость в сутки (р):</legend>
+                  <div class="range-filter">
+                    <div class="price-controls">
+                      <label class="min-price">
+                        от <input class="input-min-price" type="text" name="min-price" value=" 0">
+                      </label>
+                      <label class="max-price">
+                        до <input class="input-max-price" type="text" name="max-price" value=" 3000">
+                      </label>
+                    </div>
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
                   </div>
-                  <div class="price-area price-area-max">
-                    <label class="price-item max-price" for="max-price">до </label>
-                    <input type="text" name="max-price" id="max-price" value="3000">
-                  </div>
+                  <button class="show" type="submit">Показать</button>
+                </fieldset>
                 </div>
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
-                  <div class="toggle toggle-min" tabindex="0"></div>
-                  <div class="toggle toggle-max" tabindex="0"></div>
-                </div>
-              </div>
-            </fieldset>
-            <button class="price-button" type="submit">Показать</button>
-          </div>
-        </section>
-      </form>
+              </form>
+            </section>
 
       <section class="hotels-sorting-block">
         <h2 class="found">Найдено: 3</h2>
