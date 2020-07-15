@@ -51,39 +51,61 @@
 
     <main class="main-content">
 
-      <form action="https://echo.htmlacademy.ru" method="get">
-
-        <section class="filters">
-          <div class="left">
-            <fieldset>
-              <legend class="facilities">Инфраструктура:</legend>
-              <ul class="facilities-list">
-                <li>
-                  <label><input type="checkbox" name="area" checked value="pool">Бассейн</label>
-                </li>
-                <li>
-                  <label><input type="checkbox" name="area" value="parking">Парковка</label>
-                </li>
-                <li>
-                  <label><input type="checkbox" name="area" value="wi-fi">wi-fi</label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
+      <section class="formes-block">
+        <h2 class="visually-hidden">Поиск жилья</h2>
+        <form class="catalog-formes" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="catalog-form first">
+            <legend>Инфраструктура:</legend>
+            <ul class="list-checkbox">
+              <li class="facility">
+                <label>
+                  <input class="visually-hidden check-input" type="checkbox" checked>
+                  <span class=checkbox></span>
+                  <span>Бассейн</span>
+                </label>
+              </li>
+              <li class="facility">
+                <label>
+                  <input class="visually-hidden check-input" type="checkbox">
+                  <span class=checkbox></span>
+                  <span>Парковка</span>
+                </label>
+              </li>
+              <li class="facility">
+                <label>
+                  <input class="visually-hidden check-input" type="checkbox">
+                  <span class=checkbox></span>
+                  <span>Wi-Fi</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
           <div class="middle">
-            <fieldset>
-              <legend class="types">Тип жилья:</legend>
-              <ul class="types-list">
-                <li>
-                  <label><input type="checkbox" name="area" checked value="hotel">Гостиница</label>
+            <fieldset class="catalog-form second">
+              <legend>Тип жилья:</legend>
+              <ul class="list-checkbox">
+                <li class="facility">
+                  <label>
+                    <input class="visually-hidden check-input" type="checkbox" checked>
+                    <span class=checkbox></span>
+                    <span>Гостиница</span>
+                  </label>
                 </li>
-                <li>
-                  <label><input type="checkbox" name="area" value="motel">Мотель</label>
+                <li class="facility">
+                  <label>
+                    <input class="visually-hidden check-input" type="checkbox" checked>
+                    <span class=checkbox></span>
+                    <span>Мотель</span>
+                  </label>
                 </li>
-                <li>
-                  <label><input type="checkbox" name="area" value="apartments">Апартаменты</label>
-                <li>
+                <li class="facility">
+                  <label>
+                    <input class="visually-hidden check-input" type="checkbox" checked>
+                    <span class=checkbox></span>
+                    <span>Апартаменты</span>
+                  </label>
+                </li>
               </ul>
             </fieldset>
           </div>
@@ -111,16 +133,16 @@
               <button class="show" type="submit">Показать</button>
             </fieldset>
           </div>
-      </form>
+        </form>
       </section>
 
       <section class="hotels-sorting-block">
         <h2 class="found">Найдено: 3</h2>
         <p class="sorting">Сортировка:</p>
         <ul class="hotels-sorting-item">
-          <li class="sorting-x"><a href="#">По цене</a></li>
-          <li class="sorting-x"><a href="#">По типу</a></li>
-          <li class="sorting-x"><a href="#">По рейтингу</a></li>
+          <li class="sorting-price"><a href="#">По цене</a></li>
+          <li class="sorting-type"><a href="#">По типу</a></li>
+          <li class="sorting-rate"><a href="#">По рейтингу</a></li>
         </ul>
         <ul class="sorting-links">
           <li>
